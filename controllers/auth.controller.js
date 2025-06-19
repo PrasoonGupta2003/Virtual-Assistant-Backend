@@ -24,8 +24,6 @@ try{
         httpOnly:true,
         expires:new Date(Date.now()+10*24*60*60*1000),
         maxAge:10*24*60*60*1000,
-        sameSite:"None",
-        secure:true
     })
 
     return res.status(201).json(user);
@@ -54,8 +52,6 @@ try{
         sameSite: "Strict",
         expires:new Date(Date.now()+10*24*60*60*1000),
         maxAge:10*24*60*60*1000,
-        sameSite:"None",
-        secure:true
     })
 
     return res.status(200).json(user);
